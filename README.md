@@ -4,7 +4,7 @@ TWO-LAYER AND L-LAYER BINARY CLASSIFIER MODEL USING A NEURAL NETWORK
 
 **DESCRIPTION** 
 
-This Python 3.6 program learns from a set of 1,526 images divided into training, validation, and test sets. The images are stored in an HD5 file, with corresponding labels as to whether they contain a person/people or not.
+This algorithm is able to recognize if an image contains a person/people in it or not. It learns from a set of 1,526 images divided into training, validation, and test sets. The images are stored in an HD5 file, with corresponding labels as to whether they contain a person/people or not.
 
 **INSTALLATION**
 
