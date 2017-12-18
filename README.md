@@ -19,7 +19,7 @@ This program runs on PYTHON 3 so all dependencies will need to be versions that 
 
 *Image files*
 
-Unfortunately, the images are all too big to be stored in GitHub, so they'll need to be downloaded from [HERE] (). The folder contains the HD5 file already created to map the images. If this doesn't work for you somehow, you can just download the images and then run the array+and+label+data.py file to create your own HD5 data file (which will work with the models so long as they are stored in the same directory).
+Unfortunately, the images are all too big to be stored in GitHub, so they'll need to be downloaded from [HERE](). The folder contains the HD5 file already created to map the images. If this doesn't work for you somehow, you can just download the images and then run the array+and+label+data.py file to create your own HD5 data file (which will work with the models so long as they are stored in the same directory).
 
 *Models*
 
@@ -41,4 +41,4 @@ Based on my testing, the L-layer model shown here - which has five layers (23040
 
 **CREDIT**
 
-I wrote pretty much all of this! But most pieces of code were written originally for various assignments in Dr. Andrew Ng's Deep Learning Specialization courses on Coursera (specifically the Hyperparameter Tuning, Regularization, and Optimization course) so thanks to him and his team for helping me learn to do it all in Python! And for creating the HD5 file, I followed [this tutorial] (http://machinelearninguru.com/deep_learning/data_preparation/hdf5/hdf5.html) that was immensely helpful as well. And, of course, I would be nowhere without the Stackoverflow community. None of us would be!
+I wrote pretty much all of this! But most pieces of code were written originally for various assignments in Dr. Andrew Ng's Deep Learning Specialization courses on Coursera (specifically the Hyperparameter Tuning, Regularization, and Optimization course) so thanks to him and his team for helping me learn to do it all in Python! And for creating the HD5 file, I followed [this tutorial](http://machinelearninguru.com/deep_learning/data_preparation/hdf5/hdf5.html) that was immensely helpful as well. And, of course, I would be nowhere without the Stackoverflow community. None of us would be!
