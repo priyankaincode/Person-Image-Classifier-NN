@@ -12,10 +12,10 @@ This program runs on PYTHON 3 so all dependencies will need to be versions that 
 
 Dependencies you will need:
 
--Numpy
--Scipy
--Matplotlib
--Python Imaging Library (PIL)
+- Numpy
+- Scipy
+- Matplotlib
+- Python Imaging Library (PIL)
 
 Image files
 
