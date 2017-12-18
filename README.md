@@ -4,16 +4,37 @@ TWO-LAYER AND L-LAYER BINARY CLASSIFIER MODEL USING A NEURAL NETWORK
 
 **DESCRIPTION** 
 
-This program learns from a set of 1,526 images divided into training, validation, and test sets. The images are stored in a HD5 file, with corresponding labels as to whether they contain a person/people or not.
+This Python 3.6 program learns from a set of 1,526 images divided into training, validation, and test sets. The images are stored in an HD5 file, with corresponding labels as to whether they contain a person/people or not.
 
 **INSTALLATION**
 
-Two-layer model
+This program runs on PYTHON 3 so all dependencies will need to be versions that are compatible with that version.
 
-L-layer model
+Dependencies you will need:
+
+-Numpy
+-Scipy
+-Matplotlib
+-Python Imaging Library (PIL)
+
+Image files
+
+Unfortunately, the images are all too big to be stored in GitHub, so they'll need to be downloaded from here. The folder contains the HD5 file already created to map the images. If this doesn't work for you somehow, you can just download the images and then run the array+and+label+data.py file to create your own HD5 data file (which will work with the models so long as they are stored in the same directory).
+
+Models
+
+To "install" the models, simply download the Person_or_not_DL.py and pnp_app_utils.py files, and place them in the same directory as the Dataset folder containing the HD5 file and image files.
 
 **USAGE**
 
 Two-layer model
 
+The first model included in the program is the two-layer ReLu/sigmoid model with random initialization. To use it, simply comment out everything below line 192. Run Person_or_not_DL.py in the command line to train the model and predict on the validation and test sets.
+
 L-layer model
+
+The second model included in the program is the two-layer model with He initialization, L2 regularization, and gradient descent. To use it, comment out the two-layer model training and prediction sections (lines 91 to 191). The L-layer model is flexible and can be edited in line 195 to support different network architectures. The setting I have included here is for a five-layer model, defined as units of 230400, 30, 60, 4, and 1. (Note: the number of input and output layers must remain the same. Only the number and size of hidden layers can be edited.) Run Person_or_not_DL.py in the command line to train the L-layer model and predict on the validation and test sets.
+
+**ANALYSIS**
+
+Based on my testing, the L-layer model shown here - which has five layers (230400, 30, 60, 4, 1) and uses He initialization, L2 regularization, and gradient descent - with a learning rate (alpha) of 0.01 and lambda of 0.8 with 1500 iterations works the best, with **92 percent accuracy on the training set and 81/82 percent accuracy on the validation and test sets.** This could perhaps be improved even more with increased learning rates and decreased lambda (to address the overfitting shown in the difference between training and val/test accuracies). I left it at this level of accuracy in the interest of seeing if using TensorFlow would increase accuracy. The code for that project can be found HERE.
