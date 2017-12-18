@@ -10,28 +10,28 @@ This Python 3.6 program learns from a set of 1,526 images divided into training,
 
 This program runs on PYTHON 3 so all dependencies will need to be versions that are compatible with that version.
 
-Dependencies you will need:
+*Dependencies you will need:*
 
 - Numpy
 - Scipy
 - Matplotlib
 - Python Imaging Library (PIL)
 
-Image files
+*Image files*
 
 Unfortunately, the images are all too big to be stored in GitHub, so they'll need to be downloaded from here. The folder contains the HD5 file already created to map the images. If this doesn't work for you somehow, you can just download the images and then run the array+and+label+data.py file to create your own HD5 data file (which will work with the models so long as they are stored in the same directory).
 
-Models
+*Models*
 
 To "install" the models, simply download the Person_or_not_DL.py and pnp_app_utils.py files, and place them in the same directory as the Dataset folder containing the HD5 file and image files.
 
 **USAGE**
 
-Two-layer model
+*Two-layer model*
 
 The first model included in the program is the two-layer ReLu/sigmoid model with random initialization. To use it, simply comment out everything below line 192. Run Person_or_not_DL.py in the command line to train the model and predict on the validation and test sets.
 
-L-layer model
+*L-layer model*
 
 The second model included in the program is the two-layer model with He initialization, L2 regularization, and gradient descent. To use it, comment out the two-layer model training and prediction sections (lines 91 to 191). The L-layer model is flexible and can be edited in line 195 to support different network architectures. The setting I have included here is for a five-layer model, defined as units of 230400, 30, 60, 4, and 1. (Note: the number of input and output layers must remain the same. Only the number and size of hidden layers can be edited.) Run Person_or_not_DL.py in the command line to train the L-layer model and predict on the validation and test sets.
 
