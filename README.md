@@ -19,7 +19,7 @@ This program runs on PYTHON 3 so all dependencies will need to be versions that 
 
 *Image files*
 
-Unfortunately, the images are all too big to be stored in GitHub, so they'll need to be downloaded from here. The folder contains the HD5 file already created to map the images. If this doesn't work for you somehow, you can just download the images and then run the array+and+label+data.py file to create your own HD5 data file (which will work with the models so long as they are stored in the same directory).
+Unfortunately, the images are all too big to be stored in GitHub, so they'll need to be downloaded from [HERE] (). The folder contains the HD5 file already created to map the images. If this doesn't work for you somehow, you can just download the images and then run the array+and+label+data.py file to create your own HD5 data file (which will work with the models so long as they are stored in the same directory).
 
 *Models*
 
@@ -37,4 +37,8 @@ The second model included in the program is the two-layer model with He initiali
 
 **ANALYSIS**
 
-Based on my testing, the L-layer model shown here - which has five layers (230400, 30, 60, 4, 1) and uses He initialization, L2 regularization, and gradient descent - with a learning rate (alpha) of 0.01 and lambda of 0.8 with 1500 iterations works the best, with **92 percent accuracy on the training set and 81/82 percent accuracy on the validation and test sets.** This could perhaps be improved even more with increased learning rates and decreased lambda (to address the overfitting shown in the difference between training and val/test accuracies). I left it at this level of accuracy in the interest of seeing if using TensorFlow would increase accuracy. The code for that project can be found HERE.
+Based on my testing, the L-layer model shown here - which has five layers (230400, 30, 60, 4, 1) and uses He initialization, L2 regularization, and gradient descent - with a learning rate (alpha) of 0.01 and lambda of 0.8 with 1500 iterations works the best, with **92 percent accuracy on the training set and 81/82 percent accuracy on the validation and test sets.** This could perhaps be improved even more with increased learning rates and decreased lambda to address the overfitting shown in the difference between training and val/test accuracies. I left it at this level of accuracy in the interest of seeing if using TensorFlow would increase accuracy. (Spoiler: it doesn't. :) ) The code for that project can be found [HERE]().
+
+**CREDIT**
+
+I wrote pretty much all of this! But most pieces of code were written originally for various assignments in Dr. Andrew Ng's Deep Learning Specialization courses on Coursera (specifically the Hyperparameter Tuning, Regularization, and Optimization course) so thanks to him and his team for helping me learn to do it all in Python! And for creating the HD5 file, I followed [this tutorial] (http://machinelearninguru.com/deep_learning/data_preparation/hdf5/hdf5.html) that was immensely helpful as well. And, of course, I would be nowhere without the Stackoverflow community. None of us would be!
