@@ -94,7 +94,7 @@ def two_layer_model(X, Y, layer_dims, learning_rate, num_iterations, print_cost=
     
     ###  Arguments:
     ###  X -- input data, of shape (n_x, number of examples)
-    ###  Y -- true "label" vector (containing 0 if cat, 1 if non-cat), of shape (1, number of examples)
+    ###  Y -- true "label" vector (containing 0 if person, 1 if no person), of shape (1, number of examples)
     ###  layer_dims -- dimensions of the layers (n_x, n_h, n_y)
     ###  num_iterations -- number of iterations of the optimization loop
     ###  learning_rate -- learning rate of the gradient descent update rule
@@ -201,7 +201,7 @@ def L_layer_model(X, Y, layers_dims, learning_rate, lambd, num_iterations, print
     
     ###  Arguments:
     ###  X -- data, numpy array of shape (number of examples, num_px * num_px * 3)
-    ###  Y -- true "label" vector (containing 0 if cat, 1 if non-cat), of shape (1, number of examples)
+    ###  Y -- true "label" vector (containing 0 if person, 1 if no person), of shape (1, number of examples)
     ###  layers_dims -- list containing the input size and each layer size, of length (number of layers + 1).
     ###  learning_rate -- learning rate of the gradient descent update rule
     ###  num_iterations -- number of iterations of the optimization loop
@@ -251,7 +251,7 @@ def L_layer_model_with_batches(X, Y, layers_dims, learning_rate, mini_batch_size
     
     ###  Arguments:
     ###  X -- data, numpy array of shape (number of examples, num_px * num_px * 3)
-    ###  Y -- true "label" vector (containing 0 if cat, 1 if non-cat), of shape (1, number of examples)
+    ###  Y -- true "label" vector (containing 0 if person, 1 if no person), of shape (1, number of examples)
     ###  layers_dims -- list containing the input size and each layer size, of length (number of layers + 1).
     ###  learning_rate -- learning rate of the gradient descent update rule
     ###  num_iterations -- number of iterations of the optimization loop
